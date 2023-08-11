@@ -82,10 +82,7 @@ const showNav = () => {
   <nav class="px-3 py-5 shadow-md bg-black">
     <div class="mx-auto flex max-w-7xl items-center justify-between">
       <div>
-        <NuxtLink
-          @click="hideNav"
-          class="p-2 text-xl font-bold text-slate-800 dark:text-slate-300"
-          to="/"
+        <NuxtLink @click="hideNav" class="p-2 text-xl font-bold" to="/"
           >Multi Media</NuxtLink
         >
       </div>
