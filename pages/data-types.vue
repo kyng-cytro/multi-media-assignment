@@ -8,12 +8,22 @@ const categories = [
   { id: 3, name: "Audio" },
 ];
 </script>
+<style scoped>
+#header {
+  view-transition-name: header;
+}
+#button {
+  view-transition-name: button;
+}
+</style>
 <template>
   <div class="h-full flex items-center justify-center px-3">
     <div class="max-w-7xl w-full flex flex-col gap-10 items-center">
       <div class="flex flex-col gap-10 items-center">
-        <p class="font-bold text-3xl" @click="tab = tab + 1">Categories</p>
-        <div class="flex gap-3 md:gap-6">
+        <p class="font-bold text-3xl" @click="tab = tab + 1" id="header">
+          Categories
+        </p>
+        <div class="flex gap-3 md:gap-6" id="button">
           <button
             :key="category.id"
             @click="tab = category.id"
